@@ -1,0 +1,9 @@
+import numpy as np
+results = list()
+for i in range(100):
+    results.append(np.random.randint(1,21))
+mean = np.mean(results)
+std = np.std(results)
+sides = np.array(range(1,21))
+expected = sum(sides)/20
+std_expected  = sqrt(sum(sides**2)/20 - (sum(sides)/20)**2)
